@@ -57,7 +57,6 @@ export default function App() {
     action?: { label: string; onClick: () => void };
   }[]>([]);
 
-  // Application Settings State (LocalStorage)
   const [settings, setSettings] = useState<AppSettings>(() => {
     const cached = localStorage.getItem('sams_settings');
     if (cached) {
